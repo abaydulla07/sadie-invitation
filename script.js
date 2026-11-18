@@ -67,3 +67,35 @@ if ("IntersectionObserver" in window && motionAllowed.matches) {
   calendar.classList.add("waiting");
   document.querySelectorAll("[data-reveal]").forEach((section) => observer.observe(section));
 }
+const music = document.getElementById("music");
+const musicButton = document.getElementById("music-button");
+
+function playMusic() {
+  music.play().catch(() => {
+    musicButton.textContent = "Әуенді қосу";
+  });
+}
+
+music.addEventListener("playing", () => {
+  musicButton.textContent = "Әуенді өшіру";
+});
+
+music.addEventListener("pause", () => {
+  musicButton.textContent = "Әуенді қосу";
+});
+
+music.addEventListener("ended", () => {
+  musicButton.textContent = "Әуенді қосу";
+});
+
+musicButton.addEventListener("click", () => {
+  if (music.paused) {
+    playMusic();
+  } else {
+    music.pause();
+  }
+});
+
+musicButton.hidden = false;
+playMusic();
+
