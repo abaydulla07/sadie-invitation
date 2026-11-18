@@ -362,3 +362,22 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .calendar.waiting .event-heart path { stroke-dashoffset: 0; visibility: visible; }
 }
+.music-button {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 10;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #e5c39c;
+  border-radius: 999px;
+  background: #641d32;
+  color: #fffaf3;
+  font: 600 14px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.music-button:focus-visible {
+  outline: 2px solid #641d32;
+  outline-offset: 4px;
+}
