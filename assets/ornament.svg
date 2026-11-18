@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64" fill="none">
+  <defs>
+    <path id="horn" d="M60 47C52 39 47 34 39 34C32 34 27 41 20 41C12 41 8 35 9 29C10 21 18 17 25 20C31 22 32 29 28 32C25 34 21 32 22 29M41 30C31 21 35 10 44 11C51 12 54 21 50 27C45 33 36 38 27 48M16 45C11 47 8 47 4 45M55 36C57 28 58 22 60 18"/>
+  </defs>
+  <g stroke="#a67d4d" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#horn"/>
+    <use href="#horn" transform="translate(120) scale(-1 1)"/>
+    <path d="M60 4l4 6-4 6-4-6zM60 46l5 6-5 7-5-7z"/>
+    <path d="M6 33H2m116 0h-4"/>
+  </g>
+</svg>
